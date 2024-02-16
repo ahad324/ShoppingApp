@@ -249,6 +249,7 @@ body.bg-color{
   }
   h2 {
     margin: 25px;
+    font-size: 2rem;
   }
   
   @media (max-width: 480px) {
