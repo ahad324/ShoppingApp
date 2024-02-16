@@ -9,7 +9,7 @@ body {
     transition: background-color 0.3s ease;
   }
 body.bg-color{
-    background:#333;
+    background:#0c0b0b;
     color: white;
 }
 /* Theme Toggler*/
