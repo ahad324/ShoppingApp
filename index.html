@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Shopping App</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+      <h1>Shopping App</h1>
+      <div id="cart">
+        <button id="cart-toggle-btn">Cart</button>
+        <span id="cart-count">0</span>
+      </div>
+    </header>
+    <div id="items-container">
+      <div class="item" data-id="1">
+        <img src="./images/shoes1.png" alt="Item 1" />
+        <h2>Nike (Yellow)</h2>
+        <p>$10</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="2">
+        <img src="./images/shoes2.png" alt="Item 2" />
+        <h2>Nike (Plack)</h2>
+        <p>$20</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="3">
+        <img src="./images/shoes3.png" alt="Item 3" />
+        <h2>Nike (Purple)</h2>
+        <p>$30</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="4">
+        <img src="./images/shoes4.png" alt="Item 4" />
+        <h2>Nike (Blue)</h2>
+        <p>$15</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="5">
+        <img src="./images/shoes5.png" alt="Item 5" />
+        <h2>Nike (Grey)</h2>
+        <p>$25</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="6">
+        <img src="./images/shoes6.png" alt="Item 6" />
+        <h2>Nike (Orange)</h2>
+        <p>$35</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="7">
+        <img src="./images/shoes7.png" alt="Item 7" />
+        <h2>Nike (Red)</h2>
+        <p>$24</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="8">
+        <img src="./images/shoes8.png" alt="Item 8" />
+        <h2>Nike (LightBlack)</h2>
+        <p>$40</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="item" data-id="9">
+        <img src="./images/logshoes.png" alt="Item 9" />
+        <h2>Nike (RedBlack)</h2>
+        <p>$45</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+
+    <div id="cart-container">
+      <h2>Shopping Cart</h2>
+      <span id="empty-message">No items in cart.</span>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
