@@ -97,7 +97,21 @@ body.bg-color{
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-
+  .InputFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+#filterInput{
+  position: sticky;
+  width: 400px;
+  height: 4vh;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid;
+}
   #items-container {
     padding: 40px 0px 0px 0px;
     display: flex;
