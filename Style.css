@@ -253,6 +253,9 @@ body.bg-color{
   }
   
   @media (max-width: 480px) {
+      body{
+      overflow-x: hidden;
+    }
     #cart-container {
         position: absolute;
         width: 100%;
