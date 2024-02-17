@@ -256,7 +256,9 @@ body.bg-color{
     #cart-container {
         position: absolute;
         width: 100%;
-        top: -100%;
+        opacity: 0;
+        top: 200px;
+        left: 100%;
         margin: 0;
         padding: 0;
         background-color: #fff;
@@ -264,7 +266,8 @@ body.bg-color{
         transition: 1s all ease;
       }
     #cart-container.active{
-        top: 200px;
+        left: 0px;
+        opacity: 1;
         transition: 1s all ease;
     }
     header{
