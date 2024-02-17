@@ -253,15 +253,12 @@ body.bg-color{
   }
   
   @media (max-width: 480px) {
-      body{
-      overflow: hidden;
-    }
-    #cart-container {
+       #cart-container {
         position: absolute;
         width: 100%;
         opacity: 0;
         top: 200px;
-        left: 100%;
+        left: -100%;
         margin: 0;
         padding: 0;
         background-color: #fff;
