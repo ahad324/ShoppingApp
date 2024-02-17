@@ -9,6 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
     let cartCount = 0;
     let total = 0;
 
+    document.querySelector('.switch input').addEventListener('change', function () {
+        document.body.classList.toggle('bg-color');
+    });
+    document.getElementById('filterInput').addEventListener('input', function () {
+        const filterValue = this.value.toLowerCase();
+        const items = document.querySelectorAll('.item');
+
+        items.forEach(item => {
+            const itemName = item.querySelector('h2').textContent.toLowerCase();
+            if (itemName.includes(filterValue)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
     // Toggle cart visibility when the cart button is clicked
     cartToggleBtn.addEventListener("click", function () {
         cartContainer.classList.toggle("active");
@@ -71,6 +88,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.querySelector('.switch input').addEventListener('change', function () {
-    document.body.classList.toggle('bg-color');
-});
