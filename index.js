@@ -1,19 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
-    const cartContainer = document.getElementById("cart-container");
-    const cartCountDisplay = document.getElementById("cart-count");
-    const cartItemsList = document.getElementById("cart-items");
-    const cartTotal = document.getElementById("cart-total");
-    const cartToggleBtn = document.getElementById("cart-toggle-btn");
-    const emptycart = document.getElementById("empty-message");
-    let cartCount = 0;
-    let total = 0;
+  const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+  const cartContainer = document.getElementById("cart-container");
+  const cartCountDisplay = document.getElementById("cart-count");
+  const cartItemsList = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
+  const cartToggleBtn = document.getElementById("cart-toggle-btn");
+  const emptycart = document.getElementById("empty-message");
+  let cartCount = 0;
+  let total = 0;
 
   // Toggle cart visibility when the cart button is clicked
   cartToggleBtn.addEventListener("click", function () {
     cartContainer.classList.toggle("active");
   });
+  document.getElementById("filterInput").addEventListener("input", function () {
+    const filterValue = this.value.toLowerCase();
+    const items = document.querySelectorAll(".item");
 
+    items.forEach((item) => {
+      const itemName = item.querySelector("h2").textContent.toLowerCase();
+      if (itemName.includes(filterValue)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
   // Function to update cart count
   function updateCartCount(count) {
     count > 0
@@ -69,6 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.querySelector('.switch input').addEventListener('change', function () {
-    document.body.classList.toggle('bg-color');
+document.querySelector(".switch input").addEventListener("change", function () {
+  document.body.classList.toggle("bg-color");
 });
