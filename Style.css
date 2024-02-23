@@ -157,6 +157,7 @@ body.bg-color #filterInput:focus {
 .item:hover img {
   transform: scale(1.3);
   animation: float 2s alternate infinite;
+  filter: drop-shadow(5px 5px 10px #ff0532) ;
 }
 @keyframes float {
   0% {
